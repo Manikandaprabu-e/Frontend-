@@ -1,0 +1,28 @@
+h1{
+    color: rgb(23, 0, 128);
+    font-family: sans-serif;
+    font-size: 21px;
+}
+table{
+    margin-left: 50px;
+}
+
+
+table ,th,td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+    padding: 20px;
+    background-color: yellow;
+    border-width: 3px;
+    color: blue;
+}
+
+th{
+    background-color: black;
+    color: goldenrod;
+    padding: 20px;
+}
+ tr :hover{
+    background-color: rgb(13, 200, 85);
+ }
