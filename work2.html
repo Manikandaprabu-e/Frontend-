@@ -1,0 +1,95 @@
+<!-- Creative Event Registration Form -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <h1>🌟 Event Registration Form 🌟</h1>
+  <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="title">Title:</label>
+      <select id="title" name="title">
+        <option value="">--Select--</option>
+        <option value="mr">Mr.</option>
+        <option value="ms">Ms.</option>
+        <option value="mrs">Mrs.</option>
+        <option value="dr">Dr.</option>
+        <option value="prof">Prof.</option>
+      </select>
+
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Event Preferences</legend>
+      <label for="eventtype">Event Type:</label>
+      <select id="eventtype" name="eventtype" required>
+        <option value="">--Select Event--</option>
+        <option value="workshop">Workshop</option>
+        <option value="webinar">Webinar</option>
+        <option value="conference">Conference</option>
+        <option value="meetup">Meetup</option>
+      </select>
+
+      <label for="session">Session:</label>
+      <select id="session" name="session">
+        <optgroup label="Morning">
+          <option value="session1">Session 1 (9am-10am)</option>
+          <option value="session2">Session 2 (10am-11am)</option>
+        </optgroup>
+        <optgroup label="Afternoon">
+          <option value="session3">Session 3 (1pm-2pm)</option>
+          <option value="session4">Session 4 (2pm-3pm)</option>
+        </optgroup>
+      </select>
+
+      <label>Attendance Mode:</label>
+      <input type="radio" id="inperson" name="attendance" value="inperson" required>
+      <label for="inperson">In Person</label>
+      <input type="radio" id="virtual" name="attendance" value="virtual">
+      <label for="virtual">Virtual</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Extras</legend>
+      <label for="tshirt">T-Shirt Size:</label>
+      <select id="tshirt" name="tshirt">
+        <option value="">--Select Size--</option>
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">X-Large</option>
+      </select>
+
+      <label for="color">Preferred Color:</label>
+      <input type="color" id="color" name="color">
+
+      <label for="resume">Upload Resume (PDF):</label>
+      <input type="file" id="resume" name="resume" accept=".pdf">
+
+      <label for="requests">Special Requests:</label>
+      <textarea id="requests" name="requests" rows="3" placeholder="Let us know your needs..."></textarea>
+
+      <label for="subscribe">Subscribe to Newsletter:</label>
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" placeholder="1234567890" maxlength="10">
+    </fieldset>
+
+    <button type="submit">Submit Registration</button>
+    <button type="reset">Reset Form</button>
+  </form>

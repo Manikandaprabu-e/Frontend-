@@ -1,0 +1,169 @@
+/* Body background and font */
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8ffae 0%, #43c6ac 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  color: #222;
+  margin-top: 40px;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px #43c6ac55;
+  font-weight: 700;
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form container */
+form {
+  background: rgba(255,255,255,0.95);
+  max-width: 650px;
+  margin: 40px auto 30px auto;
+  padding: 32px 38px;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(67,198,172,0.18), 0 1.5px 8px #f8ffae55;
+  position: relative;
+  animation: fadeIn 1.2s;
+}
+
+/* Fieldset styles */
+fieldset {
+  border: 2px solid #43c6ac;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  padding: 22px 24px 18px 24px;
+  background: linear-gradient(90deg, #f8ffae 0%, #fff 100%);
+  box-shadow: 0 2px 8px #43c6ac22;
+}
+
+/* Legend styles */
+legend {
+  font-weight: bold;
+  color: #43c6ac;
+  font-size: 1.25rem;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #43c6ac22;
+}
+
+/* Label and input styles */
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 7px;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="color"],
+input[type="file"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1.5px solid #43c6ac;
+  border-radius: 7px;
+  font-size: 1.05rem;
+  background: #f6f6f6;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px #43c6ac22;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #f8ffae;
+  outline: none;
+  box-shadow: 0 0 8px #43c6ac44;
+}
+
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #43c6ac;
+  transform: scale(1.15);
+}
+
+/* Button styles */
+button[type="submit"], button[type="reset"] {
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  color: #222;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 32px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin: 22px 14px 0 0;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(67,198,172,0.15);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+  background: linear-gradient(90deg, #f8ffae 0%, #43c6ac 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 18px #43c6ac44;
+}
+
+/* File input style */
+input[type="file"] {
+  background: #fff;
+  border: none;
+  padding: 0;
+  margin-top: 4px;
+}
+
+/* Color input style */
+input[type="color"] {
+  width: 60px;
+  height: 36px;
+  border: none;
+  margin-left: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 1px 4px #43c6ac22;
+}
+
+/* Textarea style */
+textarea {
+  resize: vertical;
+  min-height: 48px;
+  max-height: 120px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  form {
+    padding: 16px 6px;
+    max-width: 98vw;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  fieldset {
+    padding: 12px 8px 8px 8px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
